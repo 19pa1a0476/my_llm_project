@@ -8,7 +8,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 bnb_config = BitsAndBytesConfig(load_in_4bit=True)
 
 BASE_MODEL = "mistralai/Mistral-7B-Instruct-v0.2"
-tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL, token="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")
+tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL, token="")
 model = AutoModelForCausalLM.from_pretrained(
     BASE_MODEL,
     device_map="auto",
