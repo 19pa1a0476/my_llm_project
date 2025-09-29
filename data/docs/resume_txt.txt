@@ -1,0 +1,74 @@
+SHYAM CHANDRA KETHU     
+Pamuru, Andhra Pradesh | +91-9490737496 | kethu.shyam@gmail.com | LinkedIn |GitHub 
+ABOUT ME: 
+Innovative Software Developer with 2+ years of experience in Java, Python, and AI/ML technologies. Currently working as a Consultant at Genpact, 
+specializing in Generative AI-powered IDE plugins and AI orchestration engines. Adept at designing cloud-based AI solutions, optimizing system 
+performance, and building LLM-integrated applications. Passionate about developing scalable and efficient AI-driven applications to enhance business 
+productivity.  
+WORK EXPERIENCE: 
+Genpact                                                                   
+Consultant | July 2023 – Present 
+Led the development of innovative Generative AI use cases within the Gen-AI Industrialization team using Agile methodologies. 
+Bengaluru, India 
+ Developed a Flask-based AI Orchestration Engine integrating Azure OpenAI & Amazon Bedrock, powering 20+ AI use cases. Built a GEN-AI API Gateway 
+with modular architecture, robust logging (MySQL, OAuth), and deployed Llama LLMs on Azure VM using Fast API. 
+ Architected Generative AI IDE plugins for IntelliJ IDEA, enabling code generation, SQL optimization, batch test-data creation, and integrated chat
+assist. Developed a GitHub AI plugin for automated PR reviews, boosting efficiency by 15-20%. Created a Code Progress Tracker Agent POC reducing 
+documentation creation time by 20-25%. 
+ Built a GenAI-based Recruitment Assister API with LangChain for interviewer support. Engineered an LLM-as-a-Judge system for precise code 
+assessment. GenAI solutions adopted by 50+ developers and top leadership, with 5+ successful client implementations. 
+Achievement:  
+ Awarded the ‘Titans@TechServices’ recognition by Genpact for outstanding performance. 
+ Received Genpact’s prestigious ‘Platinum Award’ for exceptional leadership, dedication, and transformative impact. 
+Study Owl Private Limited                                                                                                      
+Full Stack Developer Intern | January 2023 - June 2023 
+Worked on end-to-end full stack web development, enhancing UI/UX and backend performance. 
+ Developed a responsive website using React.js, HTML, and CSS, ensuring seamless cross-device compatibility. 
+ Implemented backend functionalities in Java, improving data handling and user interaction efficiency. 
+ Optimized site performance & aesthetics in collaboration with designers, reducing page load time by 30%. 
+TECHNICAL SKILLS: 
+Bengaluru, India 
+ Programming Language:                
+ Libraries/Frameworks:                                                       
+ Cloud & DevOps:                                                                 
+ Tools & Technologies:                                                      
+ Databases:             
+ Machine Learning & AI:                                                   
+ Development Methodologies:                                        
+PROJECTS WORKED: 
+Java, Python, SQL  
+Flask, LangChain, FastAPI, Spring Boot 
+AWS (EC2, S3), Microsoft Azure, Docker 
+Git, Jira, Postman, REST API, OAuth 
+MySQL, PostgreSQL 
+Generative AI, LLMs, Amazon Bedrock, Azure OpenAI 
+Agile, Scrum, Test-Driven Development (TDD) 
+IBPL Code Generation Using LangChain                                                                                                                                                       Lang Chain 
+Developed an AI-powered Streamlit application for O9 Solutions, utilizing RAG and LangChain to automate IBPL code generation. Built a Flask-based 
+backend with webhook integrations, significantly enhancing AI-driven automation and optimizing prompt handling. 
+ Optimized processing speed by 30% using Qdrant Vector DB. 
+ Enabled real-time code generation and structured LLM data preprocessing. 
+ Implemented OAuth-secured MySQL logging, enabling user-specific audit logs. 
+ Technologies Used: Python, LangChain, Qdrant, Streamlit, Flask, MySQL, VS Code 
+Iris Flower Classification using Decision Tree Algorithm                                                                                                             
+Iris Flower Classifier 
+Developed an ML-based classification model to accurately identify iris flower species based on sepal and petal measurements using the Decision Tree 
+algorithm. 
+ Achieved 96% accuracy on the Iris dataset by fine-tuning hyperparameters and evaluating model performance. 
+ Compared multiple ML models (XGBoost, Random Forest, Logistic Regression) to optimize accuracy, reducing misclassification by 10%. 
+ Implemented feature scaling & data preprocessing using Pandas & NumPy to enhance model efficiency. 
+ Visualized decision boundaries using Matplotlib & Seaborn, improving interpretability for model evaluation. 
+ Deployed model using Flask API for real-time predictions on test data. 
+ Technologies Used: Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Google Colab, Jupyter Notebook 
+CERTIFICATIONS:  
+ AWS Certified Cloud Practitioner                                    
+ Full Stack Developer Course.                                                                                                                                                                                      
+ Machine Learning Algorithms (Advanced)                      
+ Data Structures on “Udemy”.                           
+EDUCATION: 
+Sep 2024 
+Jan 2023 – June 2023 
+Sep 2022 
+Feb 2022 
+2019 – 2023 | Vishnu Institute of Technology, Bhimavaram | Bachelor of Technology – Electronics and Communication Engineering (“CGPA”: 8.64) 
+2017-2019 | Narayana Junior College, Nellore | Intermediate 12th Std. (98%) 

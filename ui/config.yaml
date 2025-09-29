@@ -1,0 +1,7 @@
+users:
+  - username: "admin"
+    password: "admin123"
+  - username: "test"
+    password: "test123"
+api_url: "http://localhost:8000/query"
+upload_dir: "../data/docs"
