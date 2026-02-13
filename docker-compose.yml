@@ -1,15 +1,64 @@
-version: "3.9"
 services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: llm
+      POSTGRES_PASSWORD: llm
+      POSTGRES_DB: llm_intel
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+      - ./infra/db/schema.sql:/docker-entrypoint-initdb.d/001_schema.sql:ro
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v2.17.2
+    command: mlflow server --host 0.0.0.0 --port 5000
+    ports:
+      - "5000:5000"
+
   api:
-    build: ./api
+    build:
+      context: .
+      dockerfile: api/Dockerfile
     ports:
       - "8000:8000"
-    volumes:
-      - ./data:/app/data
     depends_on:
-      - worker
-
-  worker:
-    build: ./worker
+      - postgres
+      - redis
+      - mlflow
+    environment:
+      DATABASE_URL: postgresql+psycopg2://llm:llm@postgres:5432/llm_intel
+      REDIS_URL: redis://redis:6379/0
+      MLFLOW_TRACKING_URI: http://mlflow:5000
     volumes:
       - ./data:/app/data
+
+  ui:
+    image: python:3.10-slim
+    working_dir: /app/ui
+    command: bash -lc "pip install --no-cache-dir -r /app/requirements.txt && streamlit run app.py --server.address 0.0.0.0 --server.port 8501"
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./:/app
+    depends_on:
+      - api
+
+  grafana:
+    image: grafana/grafana:11.2.0
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./infra/grafana/provisioning:/etc/grafana/provisioning
+
+volumes:
+  pg_data:
+  grafana_data:
+
