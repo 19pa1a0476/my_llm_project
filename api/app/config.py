@@ -12,7 +12,13 @@ class Settings(BaseSettings):
     redis_url: str = 'redis://redis:6379/0'
 
     mlflow_tracking_uri: str = 'http://mlflow:5000'
+    mlflow_experiment_name: str = 'llm-quality-intel'
     langsmith_tracing: bool = True
+    langsmith_project: str = 'llm-quality-intel'
+
+    # Cost model defaults (USD per 1K tokens).
+    input_cost_per_1k_tokens_usd: float = 0.0015
+    output_cost_per_1k_tokens_usd: float = 0.0020
 
 
 settings = Settings()
