@@ -23,7 +23,7 @@ def log_to_mlflow(
     try:
         mlflow.set_tracking_uri(settings.mlflow_tracking_uri)
         mlflow.set_experiment(settings.mlflow_experiment_name)
-        with mlflow.start_run(run_name=f"query-{request_id}", nested=True):
+        with mlflow.start_run(run_name=f"query-{request_id}"):
             mlflow.log_params(
                 {
                     "request_id": str(request_id),

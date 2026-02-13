@@ -96,7 +96,11 @@ def run_eval(dataset_path: str, api_base_url: str, model_name: str, prompt_versi
         )
         faithfulness_metric = FaithfulnessMetric()
         answer_relevancy_metric = AnswerRelevancyMetric()
-        evaluate([test_case], [faithfulness_metric, answer_relevancy_metric], print_results=False)
+        evaluate(
+            test_cases=[test_case],
+            metrics=[faithfulness_metric, answer_relevancy_metric],
+            print_results=False,
+        )
 
         faithfulness = getattr(faithfulness_metric, "score", None)
         relevancy = getattr(answer_relevancy_metric, "score", None)
